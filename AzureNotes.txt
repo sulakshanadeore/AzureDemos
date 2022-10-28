@@ -1,0 +1,56 @@
+Virtual Machine Introduction,Creating a VM, Adding a Web Role, and Downloading a Template,Azure App Service and Azure Functions,Azure App Service Web Apps,Azure App Service API Apps + Demos
+----------------------------------------
+Azure is a cloud platform.
+Azure gives the following services to its users/customers:
+1)Infrastructure as a Service: (IAAS)
+2)Software as a Service(SAAS)
+
+Virtual Machine Introduction:
+Virtual Machine: is a sub machine introduced for the purpose of creating a environment for 
+working, and running/hosting the project/software.
+
+Virtualization:
+Azure VM are on-demand computing resource or virtual machine offering by Microsoft Azure.
+We can shutdown or startup the VM as per our requirement.
+It comes under IAAS.
+
+Virtual Machine: we get a readymade computer system that has been made available by Visualization.
+VM is a copy of some part of the shared resource in the data center to be optimised and used according to need.
+
+Why ?
+1) Pricing: shutdown and stop vm when not requied, Pay as per your requirement, which makes it very economical.
+2) Security:More Control over security for the developers, they can choose OS,network,storage connections etc.
+3) Scaling : as per requirement, up/down scaling. Auto scale feature support is available.
+Scaling is availabel on the basis of CPU utilisation.
+If the time limit is taken more than 5 minutes, 70% on a single CPU, then u can use multiple CPU's, 
+and thereby scale up your application so the performance will not be hampered.
+a) Vertical---size of VM us changed.
+UpGrade--increase
+DownGrade--decrease
+
+b) Horizontal----- increasing or decreasing the number of VM's
+Load balancer is implicitly given with increasing or decreasing number of VM's.
+
+4) Scale Sets: VM Scale sets are a group of VMs with identical configuration and will be managed by the load balancer.
+
+How a VM is created/parameters on which it is created?
+1) General Purpose---balanced CPU and memory ratio, for development and testing.
+2) Compute Optimised--heavy background tasks
+3) Memory Optimised---High memory to CPU ratio, relational db,in memory analytics
+4) storage Optimised--high storage, 'L' sized ,used for  big data, no SQL
+5)GPU--- grahic intensive, video editing etc
+6)High Performance--- highest through put
+----------------------------------------------------------------------------------------------
+
+
+Resource Group---logical container for the all the related resources based on the lifetime of the resources. 
+Set of other resources based on the resource groups.
+--------------------------------------------------------------------------
+
+
+.Net allows creation of Web Services-----> http
+.Net allows creation of WCF Services-----> http/https/udp/tcp etc
+.Net allows creation of REST API Services-----> device support
+
+Azure cloud Service:
+
