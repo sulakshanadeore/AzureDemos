@@ -1,0 +1,68 @@
+Azure Storage Services-Azure Blob Storage,Azure Blob Storage,Azure File Storage,Azure Table Storage,Managing Azure Storage,Azure CosmosDB,Azure Relational Database,Authentication in Azure + Demos
+
+Azure Storage: cloud 
+
+this component of azure represents storing data in the cloud, its durable.
+
+Allows you to store the following:
+
+1)  Storing tables
+
+[
+LOB---Large Objects are 2 types:
+1) BLOB---Binary Large Objects
+2) CLOB---Character Large Objects
+]
+2) Storing Blobs---text files,audio,video etc
+3) Storing Clobs----large files, file storage, files in a particular encrypted format
+4) Message Queue
+
+etc
+
+
+Accessing the data is through http.
+
+
+Replication/Redundancy Options:
+1)Locally Redundant Storage: (LRS)--- Lowest cost option.
+Copy of the data is created in the same region where storage account is created.
+There are 3 copies of each request made against the data that resides on separate domains.
+
+2) Geo-redundant storage: (GRS)--- Intermediate option on cost.
+copy is created in a different region which means data is retained 
+even if there is failure in the complete region.
+The numbers of copies created for the data is 6.
+
+3) Zone Redundant Storage(ZRS)---intermediate
+available only for BLOB data.
+copy of the data is created on separate facilities either in the same region or across 2 regions.
+If there is a failure of one facility the data will still be immediately available from the other 
+facility.
+3 copies of the data are stored. Secondary location available if primary fails.
+
+
+4) Geo Zone Redundant Storage(GZRS)----highest
+ this allows reading of data from a secondary location if primary is not available.
+Number of copies are 6.
+
+Why All/One the above is preferred?
+1) Maintenanace
+2) Cost, divided among the org who use the servers.
+3) Upgradation of the servers immediately possible, if needed.
+4) Technical personnel availabitilty.
+5) Available globally.(http)
+
+Data Lake: A data lake is a central repository that allows you to store structured and unstructured data at any scale.
+eg: email --> dateTime is structured and email content is unstructured.
+XML is unstructured data, NoSQL is unstructured data.
+
+Data Warehouse: a data warehouse is a database optimized to analyse the relational data coming from the business. Only structured data is in the warehouse, eg. relational database.
+
+
+Data Storage:
+
+1) Container: Container is associated with a user.
+
+
+
+
