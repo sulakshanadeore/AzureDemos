@@ -1,0 +1,139 @@
+
+
+	CosmosDB
+
+
+ very responsive apps and always require it to be online, instances of these apps are 
+deployed in the datacenters that are close to the users of the app, achieve low latency (faster) 
+and high availability.
+
+Appls need to respond in real time to large changes in the peak hours, store ever increasing volumes 
+of data, and make this data available to users in milliseconds.
+
+Flipkart sales----> online
+
+Advantages:
+-->Azure Cosmos DB is a fully managed NoSQL database for modern app development.
+-->Single-digit millisecond response time.
+-->automatic and instant scalability
+-->guarantee the speed at any scale
+--> ensures business continuity
+-->support for azure functions(triggered events)
+
+How are the advantages achieved?
+1) turnkey multi-region data distribution anywhere in the world.(gzrs)
+2) open source api's
+3) sdks for popular languages
+-----------------------------
+cosmos db is multi-model nosql
+types of no-sql databases:
+1) key-value pairs
+2) documents--extend the concept of key-value database by organising entire documents into groups 
+called collections.
+3) Columnar
+4) Graph
+
+No-SQL--> non relational
+---------------------------------------------------------
+
+separate your data based on some parameter, 
+ partition key:--- data will be bifurcated.
+
+partitionkey:birthyear
+
+
+{
+
+{
+"custid":"101',
+"name":"hari",
+"birthyear":"1997"
+},
+
+{
+"custid":"102',
+"name":"pari",
+"birthyear":"1997"
+},
+
+{
+"custid":"103',
+"name":"gauri",
+"birthyear":"1998"
+},
+
+{
+"custid":"104',
+"name":"seema",
+"birthyear":"1997"
+},
+{
+"custid":"105',
+"name":"hari",
+"birthyear":"1997"
+},
+.......
+}
+----------------------------------------------
+Overview of Azure Virtual Network,Virtual Networm Connectivity,VPN Gateway,Site-to-Site VPN Connection
+,Express Route,Network Resource Monitoring,Azure Network Watcher,Network Troubleshooting"
+
+Azure Virtual Network:(VNET) is the fundamental building block for creating private network in Azure.
+It enables many types of Azure resources, for example: 
+1) VM---> securely communicate with each other, the internet and on-premises network.
+latency, scalability,availability and isolation.
+Advantages:
+1) enables azure resources--network traffic, routing request.
+
+2) outbound to internet
+inbound- public ip address or load balancer
+all the machines in the network(LAN)
+in lan each machine requires a ip address and if there are multiple machines, internal Load balancer.
+
+3)Outbound-(SNAT--Source network address translation)--- maps ip address of the backend to public ip address of your load balancer.
+
+4) filter the network traffic
+
+5) routing the network traffic
+
+6) no charge for using azure vnet.
+only vm charges are payable
+
+7) virtual networks can be available over zones  in  a region.
+
+
+
+
+VNet1                    network watcher                    Vnet2
+ VM                    |  Network gateway    |                VM
+
+1) Created 2 VNets
+2) Created connection  gateway from the connections of the second VNET1/2.
+3) network watcher is created for filtering and the routing the data between 2 vnets using Network 
+Gateway and connection network.
+4) create 1 vm in in both the vnets.
+5 a) start remote desktop connection---vm1
+5 b) start remote desktop connection---vm2
+
+6) outbound connection of ip address of vm2 try to connect with vm1 ----(rdp)
+7) network watcher----> 
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
